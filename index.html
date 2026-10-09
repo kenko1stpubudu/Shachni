@@ -174,11 +174,31 @@ const LOGO = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQ
 const CATS = [
   {id:"all", name:"සියල්ල"},
   {id:"cake", name:"කේක්"},
+  {id:"slice", name:"කේක් කෑලි"},
   {id:"cup", name:"කප් කේක්"},
+  {id:"choco", name:"චොකෝ ට්‍රීට්ස්"},
+  {id:"pizza", name:"මිනි පීසා"},
+  {id:"kebab", name:"කබාබ්"},
+  {id:"sandwich", name:"සැන්ඩ්විච්"},
+  {id:"roll", name:"රෝල් සහ පේස්ට්‍රි"},
+  {id:"patty", name:"පැටිස් සහ කට්ලට්"},
+  {id:"bun", name:"බනිස්"},
+  {id:"burger", name:"බර්ගර් සහ සබ්මැරීන්"},
+  {id:"special", name:"විශේෂ"},
   {id:"juice", name:"ජූස් සහ ෂේක්"},
   {id:"short", name:"ෂෝට් ඊට්ස්"}
 ];
 const ICONS = {
+  slice:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 34L52 18v30H10z"/><path d="M10 42h42"/><path d="M10 34v14"/><circle cx="46" cy="12" r="3"/></svg>',
+  choco:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h20v6l5 7v27a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4V25l5-7z"/><path d="M17 33h30M17 42h30"/></svg>',
+  pizza:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h44L32 56z"/><path d="M13 20c12 4 26 4 38 0"/><circle cx="27" cy="28" r="3"/><circle cx="37" cy="33" r="3"/><circle cx="31" cy="42" r="2.5"/></svg>',
+  kebab:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 56L56 8"/><circle cx="20" cy="44" r="6"/><circle cx="32" cy="32" r="6"/><circle cx="44" cy="20" r="6"/></svg>',
+  sandwich:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 46L32 14l24 32z"/><path d="M14 38h36"/><path d="M8 46v6h48v-6"/></svg>',
+  roll:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 40c0-8 6-14 14-14h24a8 8 0 0 1 0 16H18"/><path d="M10 40a8 8 0 0 0 8 8h30"/><path d="M26 30v12M36 30v12"/></svg>',
+  patty:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 42c0-12 11-21 24-21s24 9 24 21z"/><path d="M8 42h48"/><path d="M14 42l3 4M22 42l3 4M30 42l3 4M38 42l3 4M46 42l3 4"/></svg>',
+  bun:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 40c0-12 10-20 22-20s22 8 22 20c0 4-3 6-7 6H17c-4 0-7-2-7-6z"/><circle cx="24" cy="30" r="1.2"/><circle cx="32" cy="27" r="1.2"/><circle cx="40" cy="30" r="1.2"/></svg>',
+  burger:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 30c0-10 9-16 20-16s20 6 20 16z"/><path d="M10 36h44"/><path d="M12 42c4 2 8 2 12 0s8-2 12 0 8 2 12 0"/><path d="M14 46h36v4a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4z"/></svg>',
+  special:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="26" width="40" height="28" rx="2"/><path d="M10 20h44v6H10z"/><path d="M32 20v34"/><path d="M32 20c-4-8-14-8-12-2 1 3 8 2 12 2z"/><path d="M32 20c4-8 14-8 12-2-1 3-8 2-12 2z"/></svg>',
   cake:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 52h44"/><path d="M14 52V38h36v14"/><path d="M19 38V28h26v10"/><path d="M14 44c4 3 8 3 12 0s8-3 12 0 8 3 12 0"/><path d="M32 28v-8"/><path d="M32 12c-3 3-3 6 0 6s3-3 0-6z"/></svg>',
   cup:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 34h24l-4 18H24z"/><path d="M27 34l1.5 18M37 34l-1.5 18"/><path d="M17 34c0-7 5-10 9-10 0-6 3-9 6-9s6 3 6 9c4 0 9 3 9 10z"/><circle cx="34" cy="10" r="3"/></svg>',
   juice:'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20h26l-3 34H21z"/><path d="M19.5 30h23"/><path d="M34 20l5-12h7"/><circle cx="46" cy="22" r="6"/><path d="M46 16v12M40 22h12"/></svg>',
@@ -293,7 +313,7 @@ function shopView(){
   <main class="wrap">
     <div class="menu-head"><h2>අපේ මෙනුව</h2></div>
     <nav class="chips" aria-label="වර්ග">
-      ${CATS.map(c=>`<button class="chip" data-act="cat" data-id="${c.id}" aria-pressed="${ui.cat===c.id}">${c.name}</button>`).join("")}
+      ${CATS.filter(c=>c.id==="all"||state.items.some(i=>i.cat===c.id)).map(c=>`<button class="chip" data-act="cat" data-id="${c.id}" aria-pressed="${ui.cat===c.id}">${c.name}</button>`).join("")}
     </nav>
     <section class="grid" style="padding-bottom:30px">
       ${items.map(it=>`
